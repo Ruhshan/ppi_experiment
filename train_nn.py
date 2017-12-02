@@ -2,10 +2,10 @@ import tensorflow as tf
 import numpy as np
 #from processdata import create_feature_sets_and_labels
 from my_data_parse import bring_processed
-print("Sgtart")
+print("Started loading data")
 # train_x,train_y,test_x,test_y = create_feature_sets_and_labels('pos.txt','neg.txt')
 train_x,train_y,test_x,test_y = bring_processed()
-print("done")
+print("loading done")
 
 
 n_nodes_hl1 = 1000
